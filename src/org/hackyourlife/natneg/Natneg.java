@@ -40,6 +40,6 @@ public class Natneg {
 	    throws Exception {
 		DatagramSocket datagramSocket = new DatagramSocket();
 		Info i = getIP(datagramSocket);
-		System.out.println(i.getIP() + ":" + i.getPort());
+		System.out.println(datagramSocket.getLocalPort() + " => " + i.getIP() + ":" + i.getPort());
 	}
 }
